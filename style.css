@@ -1,0 +1,70 @@
+main {
+	max-width: 70%;
+	margin: 100px auto;
+}
+
+h1 {
+	font-family: 'Exo', sans-serif;
+	font-size: 80px;
+	font-weight: 300;
+}
+
+span {
+	/* display: inline-block; */
+}
+
+.active {
+	color: red;
+	font-weight: 900;
+	/* text-shadow: 0 0 10px red, 0 0 10px red; */
+	/* transform: scale(1.1) rotate(6deg); */
+	transition: all .5s ease;
+	transition: color .5s ease, font-weight 1s ease-in-out, transform .8 ease;
+}
+
+section {
+	text-align: center;
+}
+
+button {
+	background: rgb(62, 105, 185);
+	color: #fff;
+	font: 400 20px 'Exo', sans-serif;
+	border: none;
+	height: 70px;
+	width: 150px;
+	padding: 20px 0;
+	margin: 0 auto;
+	position: relative;
+	z-index: 2;
+	display: block;
+}
+
+button:after {
+	position: absolute;
+	content: '';
+	background: rgb(62, 105, 185);
+	/* background: rgb(185, 62, 168); */
+	background-image: url('https://www.freeiconspng.com/uploads/white-arrow-transparent-png-4.png');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: 20px;
+	display: block;
+	height: 70px;
+	width: 40px;
+	width: 0px;
+	left: 130px;
+	top: 0;
+	/* visibility: hidden; */
+	/* visibility: visible; */
+	transition: all .5s ease;
+	z-index: -1;
+}
+
+button:hover:after {
+	/* right: -40px; */
+	left: 130px;
+	width: 50px;
+	/* visibility: visible; */
+
+}
